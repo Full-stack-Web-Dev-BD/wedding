@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import DashboardIndex from './component/PrivateComponent/Dashboard/DashboardIndex';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <DashboardIndex />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );

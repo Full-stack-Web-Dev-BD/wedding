@@ -345,7 +345,7 @@ const Table = () => {
                     </div>
                 </div>
             </div>
-            <PageFooter />
+            <PageFooter table="Add New Table" />
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './pageFooter.css'
-const PageFooter = ({add,vendor}) => {
+const PageFooter = ({add,vendor,table}) => {
     const openChat=()=>{
         console.log(document.getElementById('ctwChat'))
     }
@@ -26,6 +26,13 @@ const PageFooter = ({add,vendor}) => {
                 
                 <div className="textMsg">
                     <p> {vendor} <i style={{marginLeft:'15px',cursor:'pointer',color:'#FFA9AD'}} class="fas fa-plus"></i> </p>
+                </div>
+                :''
+            }        {
+                table?
+                
+                <div className="textMsg">
+                    <p> {table} <img style={{width:'35px',height:'40px', cursor:'pointer'}} src={require('../../img/table.png')}/> </p>
                 </div>
                 :''
             }
