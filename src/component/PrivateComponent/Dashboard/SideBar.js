@@ -13,7 +13,7 @@ const SideBar = ({url}) => {
                 <ul>
                     <li><i class="fas fa-heart"></i></li>
 
-                    <li><Link to={`${url}/vision`}><i class="fas fa-lightbulb"></i>  </Link></li>
+                    <li><Link to={`${url}`}><i class="fas fa-lightbulb"></i>  </Link></li>
                     <li><Link to={`${url}/todo`}><i class="fas fa-file-invoice"></i>   </Link></li>
                     <li><Link to={`${url}/budget`}><i class="fas fa-dollar-sign"></i>   </Link></li>
                     <li><Link to={`${url}/vendors`}><i class="fas fa-truck"></i>  </Link></li>
@@ -21,9 +21,9 @@ const SideBar = ({url}) => {
                     <li><Link to={`${url}/table`}><i class="fas fa-table"></i>  </Link></li>
                     <li><Link to={`${url}/stationery`}><i class="fas fa-bars"></i>  </Link></li>
                     <li><Link to={`${url}/meeting`}><i class="fas fa-gift"></i>  </Link></li>
-                    <li><Link to={`${url}/profile`}><i class="fas fa-comment-alt"></i> </Link></li>
-                    <li><Link to={`${url}/`}><i class="fas fa-calendar-alt"></i></Link></li>
-                    <li><Link to={`${url}/`}><i class="fas fa-cog"></i>  </Link></li>
+                    <li><Link to={`${url}`}><i class="fas fa-comment-alt"></i> </Link></li>
+                    <li><Link to={`${url}`}><i class="fas fa-calendar-alt"></i></Link></li>
+                    <li><Link to={`${url}`}><i class="fas fa-cog"></i>  </Link></li>
                 </ul>
             </div>
         </div>

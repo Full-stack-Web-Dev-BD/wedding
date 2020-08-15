@@ -21,7 +21,7 @@ const DashboardIndex = () => {
     return (
         <div className="dashboard">
             <div className="dashboardHeader">
-                <DashboardHeader/>
+                <DashboardHeader url={url}/>
             </div>
             <div className="dashboardSideBar">
                 <SideBar url={url}/>
@@ -29,7 +29,7 @@ const DashboardIndex = () => {
             <div className="dashboardPages">
                 <div style={{paddingTop:'70px'}}>
                     <Switch>
-                        <Route path={`${path}/vision`}  component={VisionBoard} />
+                        <Route path={`${path}`} exact  component={VisionBoard} />
                         <Route path={`${path}/todo`}  component={ToDoListIndex} />
                         <Route path={`${path}/budget`}  component={Budget} />
                         <Route path={`${path}/vendors`}  component={Vendors} />

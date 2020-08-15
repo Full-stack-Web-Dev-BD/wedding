@@ -1,6 +1,7 @@
 import React from 'react'
-
-const DashboardHeader = () => {
+import {Link} from 'react-router-dom'
+const DashboardHeader = ({url}) => {
+    console.log(url)
     return (
         <div className="dbHeader">      
             <div className="dbhLogo">
@@ -20,7 +21,9 @@ const DashboardHeader = () => {
                     <img src={require('../../img/user.png')}/>
                 </div>
                 <p className="name">
-                    Hello <span>Alamin Hossen</span>
+                    <Link to={`${url}/profile`}>
+                        <span>Hello </span> <span>Alamin Hossen</span>
+                    </Link>
                 </p>
             </div>
         </div>
