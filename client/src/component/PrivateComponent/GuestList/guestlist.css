@@ -1,0 +1,63 @@
+.guestContainer{
+    text-align: center;
+}
+.guestContent{
+    margin-top: 45px;
+    width: 500px;
+    display: inline-block;
+}
+.singleGuest{
+    float: left;
+    text-align: center;
+}
+.singleGuest p{
+    color:#B8B8B8;
+    font-weight: 600;
+
+}
+.singleGuest i{
+    font-size: 36px;
+}
+.color1{
+    color: #f1c5c5;
+}
+.color2{
+    color: #34E6C1;
+}
+.color3{
+    color: #FFDA8C;
+}
+.color4{
+    color: #f89391;
+}
+/* table */
+.tableHead{
+    background-color: transparent;
+}
+.tableHead p{
+    font-size: 18px;
+    color: #e2d6d5be;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.tableHead td{
+    text-align: center;
+}
+.tableHead span{
+    display: block;
+    margin: 0 8px;
+    border-bottom: 2px solid #e2d6d5be  ;
+    color: #aba9a9;
+}
+.table td, .table th {
+    padding: 0 !important;
+}
+.guestTableBody td{
+    color: #aba9a9;
+    text-align: center;
+}
+.guestTableBody span{
+    display: block;
+    margin: 0 8px;
+    border-bottom: 2px solid #e2d6d5be  ;
+}

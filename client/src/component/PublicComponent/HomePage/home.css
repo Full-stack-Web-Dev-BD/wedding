@@ -1,0 +1,124 @@
+.singleFeatureItem >i{
+    margin-bottom: 15px;
+    display: block;
+    font-size: 26px;
+    color: #E3B6B5;
+}
+.singleFeatureItem span{
+    font-size:16px !important;
+    display: block;
+    font-size: 26px;
+    color: #E3B6B5;
+}
+.slider{
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.slider img{
+    position: absolute !important;
+    height: 100%;
+    width: 100%;
+}
+.sliderContent{
+    position: absolute;
+    top: 50%;
+    text-align-last: center;
+    color: white;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+/* plan */
+.singlePlan{
+    border-radius: 40px;
+    position: relative;
+    border: 1px solid #E3B6B5;
+}
+.middlePlan {
+    position: absolute;
+    width: 96%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+}
+.middlePlan >.planBody{
+    height: 240px;
+}
+.planHeader{
+    color:#E3B6B5 ;
+    text-align:center;
+}
+.planHeader i{
+    font-size: 24px;
+    margin: 0 2px;
+}
+.planBody{
+    overflow: auto;
+    margin-bottom: 15px;
+    height: 200px;
+}
+.planBody ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.planBody ul li{
+    text-align: center;
+    color: #9E9E9E;
+    font-size: 15px;
+}
+.planFooter{
+    padding: 0 35px;
+}
+.planFooter button{
+    background: #E3B6B5;
+    width: 100%;
+    padding: 0;
+    outline: 0;
+    color: white;
+    border-radius: 24px;
+}
+.allCarousel{
+    position: relative;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+.allCarousel::after {
+    position: absolute;
+    content: '';
+    width: 288px;
+    height: 100%;
+    background: linear-gradient(to right, white 0%,rgba(255,255,255,0) 100%);
+    z-index: 999;
+    top: 0;
+    left: 0;
+}
+.allCarousel::before {
+    position: absolute;
+    content: '';
+    width: 288px;
+    height: 100%;
+    background: linear-gradient(to left, white 0%,rgba(255,255,255,0) 100%);
+    z-index: 999;
+    top: 0;
+    right: 0;
+}
+.carouselBorder{
+    height: 2px;
+    position: relative;
+}
+
+.carouselBorder::before {
+    margin-top: 100px;
+    position: absolute;
+    content: '';
+    width: 760px;
+    height: 1px;
+    background: #E3B6B5;
+    z-index: 999;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+}

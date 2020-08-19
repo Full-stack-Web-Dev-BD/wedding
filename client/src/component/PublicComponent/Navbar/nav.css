@@ -1,0 +1,29 @@
+.signupMenu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    color:#9E9E9E;
+}
+.signupMenu  li {
+    line-height:85px;
+    cursor: pointer;
+}
+.signupMenu  li:last-child {
+    margin-left: 10px;
+}
+
+.signupMenu a{
+    color:#9E9E9E ;
+    text-decoration: none;
+}
+.signupMenu a:hover{
+    text-decoration: none;
+}
+
+.signupMenu  li i {
+    margin-right: 5px;
+}
+.signupMenu  li i span{
+
+}

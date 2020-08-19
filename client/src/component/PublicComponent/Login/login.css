@@ -1,0 +1,50 @@
+.loginPage {
+    margin-bottom: 200px;
+}
+.loginPage h4{
+    text-align: center;
+    color: #daa5a3;
+}
+.wInputGroup{
+    margin-bottom: 15px;
+    display: flex;
+}
+.wInputGroup p{
+    width: 40%;
+    font-size: 14px;
+    margin: 0;
+    color: #9E9E9E;
+}
+.wInputGroup p>i{
+    color: #daa5a3;
+    font-size: 10px;
+}
+
+.wInputGroup input {
+    border: 0;
+    width: 60%;
+    border-bottom: 1px solid #9E9E9E;
+    outline: 0;
+    position: relative;
+    bottom: 5px;
+    color: #9E9E9E;
+    padding: 0 16px;
+}
+
+
+
+/* wBtn */
+.wBtn{
+    background:#daa5a3;
+    border:1px solid #daa5a3;
+    color: white;
+    padding: 2px 45px;
+    font-weight: 500;
+    border-radius: 40px;
+    border: 0;
+}
+::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;
+}

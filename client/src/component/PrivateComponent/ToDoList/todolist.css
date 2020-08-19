@@ -1,0 +1,273 @@
+.listContainer{
+    padding: 0 30px;
+}
+.listHeader{
+    text-align: center;
+}
+.listHeader h1{
+    text-transform: capitalize;
+    color: #EEB1B1;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+.listHeader i{
+    font-size: 20px;
+}
+.listHeader p{
+    line-height: 0;
+    color:#D0D0D0
+}
+
+
+/* list title */
+.listTitle {
+    margin-top: 35px;
+    display: flex;
+}
+.listTitle h1{
+    color: #F8ADAD;
+    font-weight: 700;
+    width: 50%;
+}
+.listTitle p{
+    width: 50%;
+    text-align: right;
+}
+.listTitle > p > i {
+    margin: 0 3px;
+    font-size: 14px;
+    color: #9E9E9E;
+    line-height: 55px;
+}
+.listTitle > p > i:first-child {
+    color: #E8B3AF;
+}
+.todoListDiscription{
+    color: #9E9E9E;
+}
+/* date list */
+.singleItem i{
+    font-size: 8px;
+    color: #E8B3AF;
+}
+.subject {
+    float: left;
+    width: 35%;
+}
+.subject p{
+    color: #9E9E9E;
+}
+.subject i{
+    color: #E8B3AF;
+}
+.date {
+    position: relative;
+    float: right;
+    display: flex;
+}
+.lineDate{
+    width: 25%;
+    position: relative;
+}
+.lineDate::after {
+    content: '';
+    position: absolute;
+    width: 290px;
+    height: 3px;
+    background-color: #EFEFEF;
+    right: 100%;
+    top: 19px;
+}
+.date p {
+    text-align: center;
+}
+.day{
+    position: relative;
+    color: #F8ADAD;
+    width: 33%;
+}
+.day::before {
+    position: absolute;
+    content: '';
+    width: 23px;
+    height: 2px;
+    background: #F8ADAD;
+    top: 14px;
+    left: 79%;
+    transform: rotate(-70deg);
+}
+.day::after {
+    position: absolute;
+    content: '';
+    width: 35px;
+    height: 2px;
+    background: #F8ADAD;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.month{
+    position: relative;
+    color: #F8ADAD;
+    width: 33%;
+}
+.month::before {
+    position: absolute;
+    content: '';
+    width: 23px;
+    height: 2px;
+    background: #F8ADAD;
+    top: 14px;
+    left: 79%;
+    transform: rotate(-70deg);
+}
+.month::after {
+    position: absolute;
+    content: '';
+    width: 35px;
+    height: 2px;
+    background: #F8ADAD;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.year{
+    position: relative;
+    color: #F8ADAD;
+    width: 33%;
+    margin-left: 5px;
+}
+
+.year::after {
+    position: absolute;
+    content: '';
+    width: 46px;
+    height: 2px;
+    background: #F8ADAD;
+    top: 20px;
+    left: 48%;
+    transform: translate(-50%);
+}
+/* second line */
+.lineGeusts{
+    position: relative;
+    width: 15%;
+}
+.lineGeusts::after {
+    content: '';
+    position: absolute;
+    width: 275px;
+    height: 3px;
+    background-color: #EFEFEF;
+    right: 100%;
+    top: 19px;
+}
+.lineGeusts i {
+    font-size: 30px;
+    margin: 0 10px;
+}
+.geustsCount{
+    color: #F8ADAD;
+    position: relative;
+}
+.geustsCount::after{
+    position: absolute;
+    content:'';
+    width: 30px;
+    height: 2px;
+    top:20px;
+    background-color: #F8ADAD;;
+}
+.widthPBlog{
+    width: 60%;
+}
+.blog{
+    position: relative;
+}
+.blog i{
+    font-size: 30px;
+    position: relative;
+    bottom: 8px;
+}
+.blog::after {
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 3px;
+    background-color: #EFEFEF;
+    right: 155%;
+    top: 16px;
+}
+.budget{
+    position: relative;
+}
+.budget input {
+    max-width: 100px;
+    border: 0;
+    border-bottom: 2px solid #F8ADAD;
+    text-align: center;
+    outline: none;
+    color: #F8ADAD;
+    font-weight: 799;
+}
+
+.budget::after {
+    content: '';
+    position: absolute;
+    width: 249px;
+    height: 3px;
+    background-color: #EFEFEF;
+    right: 111%;
+    top: 23px;
+}
+.engeagmentW{
+    width:60%
+}
+.engeagmentPhotos i {
+    font-size: 30px;
+}
+.engeagmentPhotos{
+    position: relative;
+    bottom: 5px;
+}
+.engeagmentPhotos::after {
+    content: '';
+    position: absolute;
+    width: 219px;
+    height: 3px;
+    background-color: #EFEFEF;
+    right: 128%;
+    top: 23px;
+}
+.party{
+    position: relative;
+    bottom: 5px;
+}
+.party i{
+    font-size: 30px;
+}
+.party::after {
+    content: '';
+    position: absolute;
+    width: 365px;
+    height: 3px;
+    background-color: #EFEFEF;
+    right: 128%;
+    top: 23px;
+}
+.nextButton{
+    padding: 40px 0;
+    text-align: right;
+}
+.nextButton button{
+    width: 148px;
+    height: 30px;
+    border-radius: 20px;
+    background: #00CD83;
+    color: white;
+    outline: 0;
+    border: 0;
+}
+/* super rooster kok */
+/* page footer */

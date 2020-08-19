@@ -1,0 +1,33 @@
+.slider{
+    /* background: url('../../img/slider.png'); */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.sliderContent{
+    position: absolute;
+    top: 50%;
+    text-align-last: center;
+    color: white;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+/* plan */
+.about h3{
+    color: #ddb1b0;
+    position: relative;
+}
+.about h3 >i {
+    position: absolute;
+    left: -26px;
+    font-size: 20px;
+    top: 8px;
+}
+.about p{
+    color:#9E9E9E;
+    font-size: 13px;
+    text-align: justify;
+}
