@@ -27,3 +27,6 @@ mongoose.connect('mongodb://localhost/waddying',{useUnifiedTopology:true,useFind
 app.listen(PORT,()=>{
     console.log('Server started on :',PORT)
 })
+
+
+locationModel=

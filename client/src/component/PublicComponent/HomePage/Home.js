@@ -4,8 +4,11 @@ import './home.css'
 import RealWeddingOwl from './RealWeddingOwl'
 import LetesArticles from './LetesArticles'
 import Review from './Review'
+import {useRouteMatch} from 'react-router-dom'
 import FooterNav from '../FooterNav/FooterNav'
 const Home = () => {
+    const {path,url} =useRouteMatch()
+    console.log(path,url)
     return (
         <div style={{overflow:'hidden'}}>
             <Nav baseUrl="/"/>

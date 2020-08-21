@@ -5,14 +5,17 @@ import Home from './component/PublicComponent/HomePage/Home'
 import About from './component/PublicComponent/About/About'
 import Login from './component/PublicComponent/Login/Login'
 import Register from './component/PublicComponent/Register/Register'
+import PrivateRoute from './component/util/PrivateRoute'
+import PublicRoute from './component/util/PublicRoute'
+
 const App = () => {
     return (
         <BrowserRouter>
             <Switch>
                 <Route exact path="/" component={Home}/>
-                <Route path="/dashboard" component={DashboardIndex}/>
+                <PrivateRoute path="/dashboard" component={DashboardIndex}/>
                 <Route path="/about" component={About}/>
-                <Route path="/login" component={Login}/>
+                <PublicRoute path="/login" component={Login}/>
                 <Route path="/register" component={Register}/>
             </Switch>
         </BrowserRouter>

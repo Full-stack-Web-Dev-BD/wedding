@@ -22,7 +22,7 @@ const DashboardIndex = () => {
     return (
         <div className="dashboard">
             <div className="dashboardHeader">
-                <DashboardHeader url={url}/>
+                <DashboardHeader url={url} baseUrl='/'/>
             </div>
             <div className="dashboardSideBar">
                 <SideBar url={url}/>
