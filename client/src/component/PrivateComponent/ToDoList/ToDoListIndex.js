@@ -3,10 +3,6 @@ import './todolist.css'
 import PageFooter from '../PageFooter/PageFooter'
 import TowLineTitle from '../Title/TowLineTitle'
 
-
-
-
-
 const ToDoListIndex = () => {
     const [budget, setBudget] = useState('105,000')
     return (
@@ -14,7 +10,7 @@ const ToDoListIndex = () => {
             <div className="col-md-6 offset-md-3">
                 <div className="listContainer">
                     <TowLineTitle h1='To do '  icon='fas fa-heart' h2="list" p="We have a long way to go "/>
-                    <div className="listTitle">
+                    {/* <div className="listTitle">
                         <h1>Pre Wedding</h1>
                         <p>
                             <i class="fas fa-heart"></i>
@@ -29,8 +25,8 @@ const ToDoListIndex = () => {
                             <i class="fas fa-heart"></i>
                         </p>
                     </div>
-                    <p className="todoListDiscription mb-5" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam autem nam eos, totam fuga ipsam ut eveniet impedit a! Eum aspernatur natus voluptate commodi accusamus eligendi non culpa ullam placeat</p>
-                    <div className="todoList">
+                    <p className="todoListDiscription mb-5" >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam autem nam eos, totam fuga ipsam ut eveniet impedit a! Eum aspernatur natus voluptate commodi accusamus eligendi non culpa ullam placeat</p> */}
+                    <div className="todoList mt-5">
                         <div className="singleItem">
                             <div className="subject"> <p> <i class="fas fa-heart"></i> Set the Wedding date</p></div>
                             <div className="date lineDate">

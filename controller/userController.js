@@ -19,12 +19,12 @@ module.exports={
                 if(err){
                     return res.status(500).json({massage:"Eerver Error"})
                 }
-
                 new userModel({
                     name:req.body.name,
                     email:req.body.email,
                     password:hash,
-                    wDate:req.body.wDate
+                    wDate:req.body.wDate,
+                    registerDate:new Date().getFullYear()+'-'+new Date().getMonth()+'-'+new Date().getDate()
                 }).save()
                 .then(user=>{
                     console.log(user,'registered')
@@ -68,6 +68,17 @@ module.exports={
             })
             
         })
+    },
+    getUser(req,res){
+        console.log(req.body)
+        userModel.findOne({email:req.body.email})
+        .then(user=>{
+            res.status(200).json(user)
+            console.log(user)
+        })
+        .catch(err=>{
+            console.log(err)
+            res.status(500).json({massage:"Server error occurd !"})
+        })
     }
 }
-

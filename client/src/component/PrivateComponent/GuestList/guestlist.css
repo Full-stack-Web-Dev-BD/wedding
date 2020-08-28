@@ -50,6 +50,7 @@
     color: #aba9a9;
 }
 .table td, .table th {
+    text-transform: capitalize;
     padding: 0 !important;
 }
 .guestTableBody td{
@@ -60,4 +61,14 @@
     display: block;
     margin: 0 8px;
     border-bottom: 2px solid #e2d6d5be  ;
+}
+/* guestStatusSet */
+.dpColor a{
+    color:#cfa5a4 !important;
+    text-decoration: none;
+}
+.guestStatusSet a {
+    color:#cfa5a4 !important;
+    display: block;
+    padding: 0 10px;
 }

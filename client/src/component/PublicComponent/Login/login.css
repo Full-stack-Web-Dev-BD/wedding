@@ -20,14 +20,14 @@
     font-size: 10px;
 }
 
-.wInputGroup input {
+.wInputGroup select, input {
     border: 0;
     width: 60%;
     border-bottom: 1px solid #9E9E9E;
     outline: 0;
     position: relative;
     bottom: 5px;
-    color: #9E9E9E;
+    color: #daa5a3;
     padding: 0 16px;
 }
 

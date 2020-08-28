@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import UserList from '../UserList/UserListIndex'
 import SideBar from './SideBar'
 
@@ -17,10 +17,34 @@ import Vendors from '../Vendors/Vendors'
 import Table from '../Table/Table'
 import CupleDashboard from '../CupleDashboard/CupleDashboard'
 
+import Axios from 'axios'
+import  decoder from 'jwt-decode'
+
+
+import {useRecoilState,useRecoilValue} from 'recoil'
+import {userInfo} from '../../recoilState/recoilState'
+
+
+
 const DashboardIndex = () => {
+    const [getUserInfo, setUserInfo] =useRecoilState(userInfo)
+    
+    
+    useEffect(()=>{
+        let decoded=decoder(window.localStorage.getItem('w-token'))
+        Axios.post('/get-user',{email:decoded.email})
+        .then(res=>{
+            setUserInfo(res.data)
+        })
+        .catch(err=>{
+            console.log(err.response.data)
+        })
+    },[])
     let {path,url} =useRouteMatch()
     return (
+        
         <div className="dashboard">
+            {console.log(getUserInfo)}
             <div className="dashboardHeader">
                 <DashboardHeader url={url} baseUrl='/'/>
             </div>

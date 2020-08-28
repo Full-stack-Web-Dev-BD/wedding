@@ -9,11 +9,12 @@ const Nav = ({url,baseUrl}) => {
     return (
         <div className="dbHeader">
             <div className="dbhLogo">
-                <img src={require('../../img/logo.png')} />
+                <Link to='/dashboard'>
+                    <img style={{cursor:'pointer'}} src={require('../../img/logo.png')} />
+                </Link>
             </div>
             <div className="dbMenu">
                 <ul>
-                    <a href={`${baseUrl}#incio`}><li>Incio</li></a>
                     <a href={`${baseUrl}#pricing`}><li>Pricing</li></a>
                     <a href={`${baseUrl}#realWeddying`}><li>Real Weddings</li></a>
                     <a href={`${baseUrl}about`}><li>About Us</li></a>

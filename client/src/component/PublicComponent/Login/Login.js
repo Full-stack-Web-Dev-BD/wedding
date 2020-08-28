@@ -64,7 +64,7 @@ const Login = () => {
                     <button onClick={()=>submitHandler()} className="btn  wBtn">Login</button>
                     <p style={{color:'#9E9E9E', marginTop:'40px'}}>
                         Already  Have Account ?
-                        <Link to='/register'> Go to Login  Page</Link>
+                        <Link to='/register'> Go to Register  Page</Link>
                     </p>
                 </div>
             </div>

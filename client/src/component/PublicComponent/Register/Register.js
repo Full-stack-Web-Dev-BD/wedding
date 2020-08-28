@@ -84,7 +84,7 @@ const Register = () => {
                     <button onClick={()=>submitHandler()} className="btn  wBtn">Register</button>
                     <p style={{color:'#9E9E9E', marginTop:'40px'}}>
                         Not Registerd Yet ?
-                        <Link to='/login'> Go to Register  Page</Link>
+                        <Link to='/login'> Go to Login  Page</Link>
                     </p>
                 </div>
             </div>

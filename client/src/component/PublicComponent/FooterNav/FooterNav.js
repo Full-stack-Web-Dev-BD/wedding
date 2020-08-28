@@ -7,7 +7,6 @@ const FooterNav = ({url,baseUrl}) => {
         <div className="footerMenu text-center">
             <div className="dbMenu " style={{width:'100%'}}>
                 <ul>
-                    <a href={`${baseUrl}`}> <li>Inicio</li></a>
                     <a href={`${baseUrl}#pricing`}> <li>Pricing</li></a>
                     <a href={`${baseUrl}#realWeddying`}> <li>Real Weddings</li></a>
                     <a href={`${baseUrl}about`}> <li>About Us</li></a>
